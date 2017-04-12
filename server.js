@@ -14,9 +14,9 @@ function start(routing){
 
 		routing[pathName](request, response);
 
-	}).listen(80, '127.0.0.1');
+	}).listen(8888, '127.0.0.1');
 
-	console.log('Server running at http//127.0.0.1:80/');
+	console.log('Server running at http//127.0.0.1:8888/');
 }
 
 exports.start = start;

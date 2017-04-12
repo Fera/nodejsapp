@@ -5,7 +5,7 @@ var routing = {
 	'/': controllers.index,
 	'/form': controllers.form,
 	'/save-form': controllers.saveForm,
-	'/erro404': controllers.erro404
+	'/404': controllers.error404
 };
 
 server.start(routing);

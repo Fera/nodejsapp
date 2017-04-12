@@ -66,8 +66,8 @@ function saveForm(request, response){
 
 				var conn = mysql.createConnection({
 					host: 'localhost',
-					user: 'root',
-					password:'',
+					user: 'drog_znak',
+					password:'drog_znak',
 					database: 'nodejsapp'
 				});
 
@@ -89,13 +89,13 @@ function saveForm(request, response){
 		response.writeHead(301, {'Content-type':'text/plain'});
 		response.end('Only POST Method Available!');
 	}	
-};
+}
 
 function error404(request, response){
 	templating.render(response, 'views/error404.html', {
 		pageTitle: 'Strona nie została znaleziona'
 	});
-};
+}
 
 exports.index = index;
 exports.form = form;
